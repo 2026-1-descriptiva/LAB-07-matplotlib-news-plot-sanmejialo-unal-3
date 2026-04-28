@@ -6,7 +6,7 @@ Escriba el codigo que ejecute la accion solicitada en cada pregunta.
 
 import pandas as pd
 import matplotlib.pyplot as plt
-
+import os
 def pregunta_01():
 
     plt.Figure()
@@ -81,6 +81,9 @@ def pregunta_01():
         )
 
     plt.tight_layout()
+
+    if not os.path.exists("files/plots"):
+        os.makedirs("files/plots")
     plt.savefig("files/plots/news.png")
     """
     Siga las instrucciones del video https://youtu.be/qVdwpxG_JpE para
