@@ -82,7 +82,6 @@ def pregunta_01():
 
     plt.tight_layout()
     plt.savefig("files/plots/news.png")
-    plt.show()
     """
     Siga las instrucciones del video https://youtu.be/qVdwpxG_JpE para
     generar el archivo `files/plots/news.png`.
